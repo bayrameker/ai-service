@@ -1,0 +1,91 @@
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Database
+sqlalchemy==2.0.23
+alembic==1.13.1
+psycopg2-binary==2.9.9
+redis==5.0.1
+
+# LLM Providers
+openai==1.3.7
+anthropic==0.7.8
+ollama==0.1.7
+
+# Agent Frameworks
+langgraph==0.0.26
+langchain==0.0.350
+langchain-community==0.0.13
+langchain-openai==0.0.2
+langchain-anthropic==0.0.1
+
+# Vector Databases
+faiss-cpu==1.7.4
+chromadb==0.4.18
+sentence-transformers==2.2.2
+
+# Memory and Learning
+numpy==1.24.3
+pandas==2.1.4
+scikit-learn==1.3.2
+
+# Security and Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+
+# HTTP and API
+httpx==0.25.2
+aiohttp==3.9.1
+requests==2.31.0
+
+# Database Connectors
+asyncpg==0.29.0
+aiomysql==0.2.0
+aiosqlite==0.19.0
+motor==3.3.2
+
+# Cloud Services
+boto3==1.34.0
+azure-identity==1.15.0
+azure-storage-blob==12.19.0
+azure-keyvault-secrets==4.7.0
+google-cloud-storage==2.10.0
+google-cloud-secret-manager==2.18.1
+
+# Message Queue
+celery==5.3.4
+kombu==5.3.4
+
+# Monitoring and Logging
+prometheus-client==0.19.0
+structlog==23.2.0
+python-json-logger==2.0.7
+
+# Configuration
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+pytest-xdist==3.5.0
+psutil==5.9.6
+pytest-cov==4.1.0
+httpx==0.25.2
+
+# Development
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Utilities
+click==8.1.7
+rich==13.7.0
+typer==0.9.0

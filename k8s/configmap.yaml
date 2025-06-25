@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ai-service-config
+  namespace: ai-service
+data:
+  ENVIRONMENT: "production"
+  LOG_LEVEL: "INFO"
+  REDIS_URL: "redis://redis-service:6379/0"
+  VECTOR_DB_TYPE: "faiss"
+  VECTOR_DB_PATH: "/app/data/vector_db"
+  DATABASE_URL: "postgresql://ai_user:ai_password@postgres-service:5432/ai_service"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ai-service-secrets
+  namespace: ai-service
+type: Opaque
+data:
+  # Base64 encoded values - replace with actual values
+  JWT_SECRET_KEY: eW91ci1zZWNyZXQta2V5LWNoYW5nZS1pbi1wcm9kdWN0aW9u
+  OPENAI_API_KEY: ""
+  ANTHROPIC_API_KEY: ""
+  POSTGRES_PASSWORD: YWlfcGFzc3dvcmQ=
