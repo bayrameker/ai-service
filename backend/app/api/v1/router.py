@@ -3,7 +3,7 @@ Main API Router for v1
 """
 
 from fastapi import APIRouter
-from app.api.v1.endpoints import llm, models, health, agents, memory, integrations, collaboration, plugins
+from app.api.v1.endpoints import llm, models, health, agents, memory, integrations, collaboration, plugins, docs
 
 api_router = APIRouter()
 
@@ -16,3 +16,4 @@ api_router.include_router(memory.router, prefix="/memory", tags=["memory"])
 api_router.include_router(integrations.router, prefix="/integrations", tags=["integrations"])
 api_router.include_router(collaboration.router, prefix="/collaboration", tags=["collaboration"])
 api_router.include_router(plugins.router, prefix="/plugins", tags=["plugins"])
+api_router.include_router(docs.router, prefix="/docs", tags=["documentation"])
